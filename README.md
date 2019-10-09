@@ -1,5 +1,5 @@
 # Productividad
-Datos, shortcuts y comandos para que he ido aprendiendo
+Datos, shortcuts y comandos que he ido aprendiendo
 
 ## Comandos para R
 
