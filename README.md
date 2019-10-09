@@ -1,2 +1,6 @@
 # Productividad
-Datos, shortcuts y comandos para mejorar la productividad haciendo código
+Datos, shortcuts y comandos para mejorar la productividad al escribir código
+
+## R
+
+
