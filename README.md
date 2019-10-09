@@ -5,7 +5,16 @@ Datos, shortcuts y comandos para que he ido aprendiendo
 
 A modo de ejemplo, uso la base de datos llamada **iris** que viene cargada en RStudio
 
-### Para inspeccionar el contenido de una tabla
+#### Ayuda de R
+
+Para consultar acerca de una función
+
+```r
+# ?nombre_de_la_Funcion
+?summary
+```
+
+#### Para inspeccionar el contenido de una tabla
 
 
 ```r
@@ -43,7 +52,24 @@ tail(iris, 8)
 
 ![Gráfica_7](/img/tail_iris_8.png)
 
+```r
+# Dimensión de la tabla
+dim(iris)
+```
 
+```r
+# Cantidad de filas de la tabla
+nrow(iris)
+```
 
+```r
+# Cantidad de columnas de la tabla
+ncol(iris)
+```
+
+```r
+# Nombre de las columnas de la tabla
+colnames(iris)
+```
 
 
