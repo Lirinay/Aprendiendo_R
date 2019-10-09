@@ -12,7 +12,7 @@ A modo de ejemplo, uso la base de datos llamada **iris** que viene cargada en RS
 # Representación gráfica
 plot(iris)
 ```
-![Gráfica](/Users/Natalia/Dropbox/R_Aprendiendo/Rplot_iris.png)
+![Gráfica](/img/Rplot_iris.png)
 
 ```r
 # Resumen de principales estadísticos
