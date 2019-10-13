@@ -1,4 +1,4 @@
-# Productividad
+# Aprendiendo R
 Datos, shortcuts y comandos que he ido aprendiendo
 
 ## Comandos para R
