@@ -35,6 +35,14 @@ Los operadores lógicos son los símbolos:
 - **==**: igual que
 - **!=**: no igual que
 
+Para comparar expresiones lógicas se utilizan los operadores **|** ("o") y **&** ("y"). Algunos ejemplos de comparación de expresiones lógicas:
+
+```r
+(3 > 5) & (4 == 4)
+(TRUE == TRUE) | (TRUE == FALSE)
+((111 >= 111) | !(TRUE)) & ((4 + 1) == 5)
+```
+
 ```r
 # Ejemplo para crear un vector lógico
 num_vect <- c(0.5, 55, -10, 6)
@@ -45,7 +53,39 @@ tf
 [1]  TRUE FALSE  TRUE FALSE
 ```
 
+### Vector de caracteres
 
+Para que R reconozca que los caracteres son del tipo string se deben encerrar cada uno con comillas:
+
+```r
+# Ejemplo de vector de caracteres
+my_char <- c("My", "name", "is")
+```
+
+```r
+# Unir los elementos del vector separándolos por un espacio
+paste(my_char, collapse = " ")
+[1] "My name is"
+```
+
+```r
+# Ejemplo 1 de unir caracteres
+paste("Hello", "world!", sep=" ")
+[1] "Hello world!"
+```
+```r
+# Ejemplo 2
+paste(c(1:3), c("X","Y","Z"), sep = "")
+[1] "1X" "2Y" "3Z"
+```
+
+```r
+# Ejemplo 3: LETTERS es una variable predefinida de R que contiene un vector de las 26 letras del 
+# alfabeto inglés
+paste(LETTERS, 1:4, sep = "-")
+ [1] "A-1" "B-2" "C-3" "D-4" "E-1" "F-2" "G-3" "H-4" "I-1" "J-2" "K-3" "L-4" "M-1" "N-2"
+[15] "O-3" "P-4" "Q-1" "R-2" "S-3" "T-4" "U-1" "V-2" "W-3" "X-4" "Y-1" "Z-2"
+```
 
 ### Comandos para trabajar con directorios y archivos
 
