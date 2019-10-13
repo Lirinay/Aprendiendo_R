@@ -72,4 +72,52 @@ ncol(iris)
 colnames(iris)
 ```
 
+## Comandos
+
+```r
+# Directorio actual de trabajo
+getwd()
+```
+
+```r
+# Listado de los objetos en tu espacio de trabajo local
+ls()
+[1] "x"
+```
+
+```r
+# Listar los archivos del directorio actual  
+list.files()
+
+# Alternativamente 
+dir()
+```
+
+```r
+# Crear un nuevo directorio llamado testdir
+dir.create("testdir")
+```
+
+```r
+# Cambiar al directorio testdir
+setwd("testdir")
+```
+
+```r
+# Crear un archivo llamado mytest.R en el directorio actual
+file.create("mytest.R")
+```
+
+
+
+
+
+
+
+
+
+
+
+
+
 
