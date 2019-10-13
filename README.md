@@ -72,7 +72,7 @@ ncol(iris)
 colnames(iris)
 ```
 
-## Comandos
+## Comandos para trabajar con directorios y archivos
 
 ```r
 # Directorio actual de trabajo
@@ -108,8 +108,53 @@ setwd("testdir")
 file.create("mytest.R")
 ```
 
+```r
+# Verificar si existe el archivo mytest.R
+file.exists("mytest.R")
+[1] TRUE
+```
+
+```r
+# Acceder a la información del archivo mytest.R
+> file.info("mytest.R")
+         size isdir mode               mtime               ctime               atime uid
+mytest.R    0 FALSE  644 2019-10-13 12:10:07 2019-10-13 12:10:07 2019-10-13 12:10:07 501
+         gid   uname grname
+mytest.R  20 Natalia  staff
+```
+
+```r
+# Cambiar el nombre del archivo de mytest.R a mytest2.R
+file.rename("mytest.R","mytest2.R")
+[1] TRUE
+```
+
+```r
+# Crear una copia del archivo mytest2.R llamada mytest3.R
+file.copy("mytest2.R","mytest3.R")
+[1] TRUE
+```
+
+```r
+# Proporcionar la ruta relativa al archivo mytest3.R
+file.path("mytest3.R")
+[1] "mytest3.R"
+```
+
+```r
+# Puede usar file.path para construir rutas de archivos y directorios que sean independientes del
+# sistema operativo en el que se ejecuta su código R. Pase 'folder1' y 'folder2' como argumentos al
+# file.path para crear un nombre de ruta independiente de la plataforma.
+file.path("folder1","folder2")
+[1] "folder1/folder2"
+```
 
 
+```r
+# Crear un directorio en el directorio de trabajo actual llamado "testdir2" y un subdirectorio llamado 
+# "testdir3", todo en un comando usando dir.create () y file.path ().
+dir.create(file.path("testdir2","testdir3"), recursive = TRUE)
+```
 
 
 
